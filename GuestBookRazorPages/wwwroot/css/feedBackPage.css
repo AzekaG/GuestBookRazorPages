@@ -1,0 +1,75 @@
+﻿
+.messageBox::-webkit-scrollbar {
+    width: 0;
+}
+
+.messageBox {
+    
+    
+    height : 90vh;
+    opacity: 0.9;
+    position: absolute;
+    top:4px;
+    right: 450px;
+    left: 50px;
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+    overflow: hidden auto;
+}
+
+
+
+#comments-slider {
+   
+    padding: 1em;
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 1em;
+}
+
+.quote {
+    background: antiquewhite;
+    padding: 15px 20px 5px 15px;
+    border-radius: 55px;
+    margin: 30px;
+}
+
+    .quote:after {
+        content: '';
+        width: 0px;
+        height: 0px;
+        border-style: solid;
+        border-width: 20px 18px 0 18px;
+        border-color: antiquewhite transparent transparent transparent;
+        position: relative;
+        top: 37px;
+        left: 20px;
+    }
+
+.persona {
+    margin-left: 25px;
+   /* margin-bottom: 80px;*/
+}
+
+.persona .photo {
+        background-color: #ccc;
+        border-radius: 100px;
+        width: 60px;
+        height: 60px;
+        float: left;
+        margin-right: 10px;
+    }
+
+.persona p {
+        position: relative;
+        top: 5px;
+        text-transform: uppercase;
+    }
+
+.inputBoxMessage {
+    position: relative;
+    top: 80vh;
+    width: 70vw;
+    left: 14%;
+}

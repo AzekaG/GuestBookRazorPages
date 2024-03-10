@@ -1,0 +1,33 @@
+﻿@page
+@model GuestBookRazorPages.Pages.LoginModel
+@{
+}
+
+
+
+<div class="container">
+    <div class="heading">Вход</div>
+    <span>
+        @if (ViewData["Pass"] != null)
+        {
+            @ViewData["Pass"]
+        }
+            </span>
+
+    <form asp-validation-summary="ModelOnly" method="post" class="form">
+        <input required="" class="input" type="email" name="email" id="email" placeholder="E-mail">
+        <input required="" class="input" type="password" name="password" id="password" placeholder="Пароль">
+        <input class="login-button" type="submit" value="Войти">
+        
+    </form>
+    <a asp-page="./Index">
+    <div class="form" >
+        <input class="login-button" type="button" asp-route-id="" value="На главную" style="max-width: 300px">
+    </div>
+    </a>
+    
+</div>
+
+
+
+
